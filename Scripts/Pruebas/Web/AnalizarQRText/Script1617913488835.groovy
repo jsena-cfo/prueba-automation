@@ -50,23 +50,23 @@ WebUI.waitForPageLoad(2)
 
 WebUI.maximizeWindow()
 
-WebUI.waitForElementPresent(findTestObject('00-GeneradorQRCodigosTexto/a_Texto'), 5)
+WebUI.waitForElementPresent(findTestObject('00-ObjectsQRCodigosTexto/a_Texto'), 5)
 
-WebUI.click(findTestObject('00-GeneradorQRCodigosTexto/a_Texto'))
+WebUI.click(findTestObject('00-ObjectsQRCodigosTexto/a_Texto'))
 
-WebUI.waitForElementPresent(findTestObject('00-GeneradorQRCodigosTexto/textarea_Texto_textarea'), 5)
+WebUI.waitForElementPresent(findTestObject('00-ObjectsQRCodigosTexto/textarea_Texto_textarea'), 5)
 
-WebUI.sendKeys(findTestObject('00-GeneradorQRCodigosTexto/textarea_Texto_textarea'), textoIngreso)
+WebUI.sendKeys(findTestObject('00-ObjectsQRCodigosTexto/textarea_Texto_textarea'), textoIngreso)
 
-WebUI.waitForElementPresent(findTestObject('00-GeneradorQRCodigosTexto/button_Generar Cdigo QR'), 5)
+WebUI.waitForElementPresent(findTestObject('00-ObjectsQRCodigosTexto/button_Generar Cdigo QR'), 5)
 
-WebUI.focus(findTestObject('00-GeneradorQRCodigosTexto/button_Generar Cdigo QR'))
+WebUI.focus(findTestObject('00-ObjectsQRCodigosTexto/button_Generar Cdigo QR'))
 
-WebUI.click(findTestObject('00-GeneradorQRCodigosTexto/button_Generar Cdigo QR'))
+WebUI.click(findTestObject('00-ObjectsQRCodigosTexto/button_Generar Cdigo QR'))
 
-WebUI.waitForElementPresent(findTestObject('00-GeneradorQRCodigoImagen/img'), 5)
+WebUI.waitForElementPresent(findTestObject('00-ObjectsQRCodigoImagen/img'), 5)
 
-String qrCodeURL = WebUI.getAttribute(findTestObject('00-GeneradorQRCodigoImagen/img'), 'src')
+String qrCodeURL = WebUI.getAttribute(findTestObject('00-ObjectsQRCodigoImagen/img'), 'src')
 
 //Create an object of URL Class
 URL url = new URL(qrCodeURL)
