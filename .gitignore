@@ -6,6 +6,8 @@ Reports/
 \.classpath
 \.project
 \.settings/
+settings/internal/com.kms.katalon.composer.testcase.properties
+*.project
 bin/lib/
 Libs/
 Libs/TempTestCase*
