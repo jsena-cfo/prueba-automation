@@ -26,3 +26,7 @@ hs_err_pid*
 /.settings/
 /.classpath
 .svn/
+
+# Katalon conflict
+/settings/internal/com.kms.katalon.composer.testcase.properties
+.project
